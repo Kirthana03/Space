@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/takahirox/aframe-outline/master/build/aframe-outline.min.js"></script>
+    <script src = "scale-toggle.js"></script>
+    <title>Got some space?</title>
+</head>
+<body>
+    <a-scene outline>
+        <a-assets>
+          <a-asset-item id="Scene" src="Assets/Scale_05.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity id="rig" position = "0 0 7">
+            <a-camera  user-height = "1.5">
+                <a-entity>
+                    <a-cursor
+                      geometry="primitive:sphere ; radius:0.008"
+                      color="#FFF281">
+                    </a-cursor>
+                </a-entity>
+            </a-camera>
+
+        </a-entity>
+    </a-entity>
+    <a-entity light="type: point; color: #ffffff; intensity:0.8"></a-entity>
+    <a-plane
+      color = "#090909"
+      rotation = "-90 0 0"
+      scale = "40 40 1"
+      position = "0 0.5 0">
+    </a-plane>
+    <a-sky
+      color = "#000000"
+    ></a-sky>
+    <a-box 
+     position="0 1 0"
+     side="double"
+     scale = "40 40 40"
+     scale-toggle></a-box>
+        </a-scene>
+    
+</body>
+</html>
