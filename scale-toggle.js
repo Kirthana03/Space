@@ -8,7 +8,7 @@ AFRAME.registerComponent('scale-toggle',{
         this.togglescale = function() {
             console.log('clicked');
             box.setAttribute('animation','property:scale; to:2 2 2; dur:4500; loop:false');
-            cam.setAttribute('animation','property:position; to:0 0 0.2; dur:4500 loop:false');
+            cam.setAttribute('animation','property:position; to:0 0 0; dur:4500 loop:false');
             imgO.setAttribute('opacity','0');
             img7.setAttribute('opacity','1');
         }
